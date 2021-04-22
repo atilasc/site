@@ -1,0 +1,87 @@
+*{
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+}
+
+body{
+    margin:0px;
+}
+
+.navigation{
+    background: #2E3192;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation > div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+@media (min-width: 1200px){
+    .container {
+        max-width: 1140px;
+        width: 100%;
+    }
+}
+
+.navigation-menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+}
+
+.navigation-img{
+    left: 0px;
+}
+
+
+.text-menu{
+    font-size: 16px;
+    line-height: 150%;
+    padding: 18px 4px;
+    color: #CCCCCC;
+    cursor: pointer;
+}
+
+.section-frame1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #BCE2FF;
+    height: 666px;
+}
+
+.frame1{
+    position: absolute;
+    margin-top: -78px;
+    margin-left: -145px;
+    width: 427px;
+}
+
+.section-frame2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-cards{
+    display: flex;
+    justify-content: center;
+    margin: 5% 10% 5% 10%;
+    flex-wrap: wrap;
+}
+
+.cards{
+    width: 400px;
+    height: 400px;
+    background: white;
+    margin: 21px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 1px solid #00AEEF;
+}
+
+

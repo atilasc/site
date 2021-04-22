@@ -1,3 +1,5 @@
+{% load static %}
+
 <!doctype html>
 <html lang="pt-br">
 <head>
@@ -5,9 +7,44 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Santa Emília</title>
+    
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+  
 </head>
 <body>
+
+    <section class="navigation">
+        <div class="container">
+            <div class="navigation-img">
+                <img src="{% static 'images/logo.png' %}" alt="">
+            </div>
+            <div class="navigation-menu">
+                <span class="text-menu">Sobre nós</span>
+                <span class="text-menu">Especialidades</span>
+                <span class="text-menu">Convênios</span>
+                <span class="text-menu">Contato</span>
+            </div>
+    
+        </div>
+    </section>
+
+    <section class="section-frame1">
+        <div class="container">
+            <img class="frame1" src="{% static 'images/logo2.png' %}" alt="">
+        </div>
+    </section>
+
+    <section class="section-frame2">
+        <div class="container">
+            <div class="div-cards">
+                <div class="cards"></div>
+                <div class="cards"></div>
+                <div class="cards"></div>
+                <div class="cards"></div>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
