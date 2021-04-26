@@ -3,25 +3,30 @@
 <!doctype html>
 <html lang="pt-br">
 <head>
+    
+    <link rel="sortcut icon" href="{% static 'images/icon.svg' %}" type="image/x-icon" />
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Santa Emília</title>
+
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css"/>
     
     <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
-  
+    
 </head>
 <body>
 
     <section class="navigation">
         <div class="container">
             <div class="navigation-img">
-                <img src="{% static 'images/logo.png' %}" alt="">
+                <img src="{% static 'images/02.svg' %}" alt="">
             </div>
             <div class="navigation-menu">
                 <span class="text-menu">Sobre nós</span>
-                <span class="text-menu">Especialidades</span>
+                <a class="text-menu" href="#especialidade">Especialidades</a>
                 <span class="text-menu">Convênios</span>
                 <span class="text-menu">Contato</span>
             </div>
@@ -32,19 +37,222 @@
     <section class="section-frame1">
         <div class="container">
             <img class="frame1" src="{% static 'images/logo2.png' %}" alt="">
+			<div class="slider fade metade1">
+                <div>
+                    <h1 class="h1-topo">Atendimento 24h</h1>
+                    <h3 class="h3-topo">Pensando em estar sempre disponível para você, o Hospital Santa Emília oferece atendimento de urgência e emergência 24 horas por dia, 7 dias por semana.</h3>
+                </div>
+                <div style="opacity: 0;">
+                    <h1 class="h1-topo">Qualificação</h1>
+                    <h3 class="h3-topo">Selecionamos os melhores profissionais da região para promover saúde e bem-estar a você através de um atendimento personalizado e humanizado.</h3>
+                </div>
+                <div style="opacity: 0;">
+                    <h1 class="h1-topo">Qualidade</h1>
+                    <h3 class="h3-topo">A Santa Emília foi planejado para promover o máximo de conforto e qualidade em nossos serviços. Alinhamos profissionalismo e tecnologia para oferecer o melhor para você.</h3>
+                </div>
+            </div> 
+            <div class="metade2">
+                <img class="frame2" src="{% static 'images/imagetop.png' %}" alt="">
+            </div>
         </div>
     </section>
 
     <section class="section-frame2">
         <div class="container">
             <div class="div-cards">
-                <div class="cards"></div>
-                <div class="cards"></div>
-                <div class="cards"></div>
-                <div class="cards"></div>
+                <div class="cards">
+                    <div class="cont1">
+                        <img class="icone-card" src="{% static 'images/cards1.png' %}" alt="">
+                    </div>
+                    <div class="cont2">
+                        <h3 class="cont2-cab">Maternidade</h3>
+                    </div>
+                    <div class="cont3">
+                        <span class="cont3-text">Nossa maternidade incorpora os mais modernos conceitos em assistência obstétrica e neonatal, dispondo de recursos de ponta e assistência humanizada.</span>
+                    </div>
+                    <div class="cont4">
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cont1">
+                        <img class="icone-card" src="{% static 'images/cards1.png' %}" alt="">
+                    </div>
+                    <div class="cont2">
+                        <h3 class="cont2-cab">Emergência 24h</h3>
+                    </div>
+                    <div class="cont3">
+                        <span class="cont3-text">A Santa Emília conta com emergência ortopédica e obstétrica. Estamos preparados e equipados para atender situações de urgência em todos os níveis.</span>
+                    </div>
+                    <div class="cont4">
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cont1">
+                        <img class="icone-card" src="{% static 'images/cards1.png' %}" alt="">
+                    </div>
+                    <div class="cont2">
+                        <h3 class="cont2-cab">Clínica médica</h3>
+                    </div>
+                    <div class="cont3">
+                        <span class="cont3-text">A clínica médica do Hospital Santa Emília possui uma equipe especialista no diagnóstico e tratamento clínico das mais variadas patologias.</span>
+                    </div>
+                    <div class="cont4">
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cont1">
+                        <img class="icone-card" src="{% static 'images/cards1.png' %}" alt="">
+                    </div>
+                    <div class="cont2">
+                        <h3 class="cont2-cab">Centro cirúrgico</h3>
+                    </div>
+                    <div class="cont3">
+                        <span class="cont3-text">O nosso centro cirúrgico possui equipamentos de alta tecnologia e uma infraestrutura adequada para cirurgias de todos os portes.</span>
+                    </div>
+                    <div class="cont4">
+                        <a href="#"></a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <section class="section-frame3">
+        <h2 class="frame3-h2">Agende sua consulta!</h2>
+        <button class="frame3-button">Agendar consulta</button>
+    </section>
+
+    <section id="especialidade" class="section-frame4">
+        <h2 class="frame4-h2">Especialidades </h2>
+        <div class="container-slide">
+            <div class="slider slider-nav center">
+                <div>
+                    <h3 class="font-slide">Obstetrícia</h3>
+                </div>
+                <div>
+                    <h3 class="font-slide">Ortopedia</h3>
+                </div>
+                <div>
+                    <h3 class="font-slide">Bioimagem</h3>
+                </div>
+                <div>
+                    <h3 class="font-slide">Neonatologia</h3>
+                </div>
+                <div>
+                    <h3 class="font-slide">Ginecologia</h3>
+                </div>
+                <div>
+                    <h3 class="font-slide">Urologia</h3>
+                </div>
+                <div>
+                    <h3 class="font-slide">Angiologia</h3>
+                </div>
+                <div>
+                    <h3 class="font-slide">Cirurgia oncológica de pequeno e médio porte</h3>
+                </div>
+                <div>
+                    <h3 class="font-slide">Cirurgia geral com abordagens por vídeo</h3>
+                </div>
+                <div>
+                    <h3 class="font-slide">Cirurgia pediátrica</h3>
+                </div>
+            </div>
+            <div class="slider slider-for center text-ajust">
+                <div>
+                    <h3 class="font-slide-text">Obstetrícia é uma especialidade médica focada no acompanhamento de gestantes, desde o pré-natal até o pós-parto.</h3>
+                </div>
+                <div>
+                    <h3 class="font-slide-text">A Ortopedia é a área da medicina focada no diagnóstico e tratamento de problemas que afetam o aparelho locomotor e o sistema esquelético.</h3>
+                </div>
+                <div>
+                    <h3 class="font-slide-text">Bioimagem é uma área da medicina focada no diagnóstico por exames de imagem que auxiliam no tratamento precoce de diversas doenças.</h3>
+                </div>
+                <div>
+                    <h3 class="font-slide-text">Neonatologia é o ramo da medicina que visa tratar possíveis disfunções em crianças recém nascidas.</h3>
+                </div>
+                <div>
+                    <h3 class="font-slide-text">Ginecologia é uma especialidade médica que foca na prevenção e tratamento de doenças que acometem os órgãos genitais femininos.</h3>
+                </div>
+                <div>
+                    <h3 class="font-slide-text">A Urologia é uma área da medicina focada em tratamentos cirúrgicos e não cirúrgicos de doenças do intestino delgado, intestino grosso, reto e ânus.</h3>
+                </div>
+                <div>
+                    <h3 class="font-slide-text">A Angiologia é a área da medicina que se dedica a prevenir, diagnosticar e tratar todas as doenças relacionadas ao sistema circulatório.</h3>
+                </div>
+                <div>
+                    <h3 class="font-slide-text">A Cirurgia Oncológica é um dos procedimentos mais realizados para o tratamento de diversos tipos de câncer.</h3>
+                </div>
+                <div>
+                    <h3 class="font-slide-text">A Cirurgia Geral é uma área que ocupa-se do tratamento de enfermidades passíveis de serem solucionadas por procedimentos cirúrgicos.</h3>
+                </div>
+                <div>
+                    <h3 class="font-slide-text">A Cirurgia Pediátrica é a especialidade médica responsável pelo tratamento cirúrgico de doenças desenvolvidas entre o período neonatal e a puberdade.</h3>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="section-frame4">
+
+    </section>
+
+    <section class="section-convênios">
+
+    </section>
+
+    <section class="section-Rodapé">
+        
+    </section>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+
+    <script type="text/javascript">
+
+        var $doc = $('html, body');
+        $('a').click(function() {
+            $doc.animate({
+                scrollTop: $( $.attr(this, 'href') ).offset().top
+            }, 500);
+            return false;
+        });
+
+        $(document).ready(function(){
+
+            $('.slider-for').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.slider-nav'
+            });
+
+            $('.slider-nav').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: '.slider-for',
+                dots: true,
+                centerMode: true,
+                focusOnSelect: true,
+            });
+
+            $('.fade').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear',
+                autoplay: true,
+                autoplaySpeed: 4000,
+            });
+        });
+
+    </script>
 
 </body>
 </html>
