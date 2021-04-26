@@ -1,5 +1,13 @@
 *{
-    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+    font-family: 'Montserrat',Trebuchet MS,Arial,sans-serif;
+}
+
+a {
+    text-decoration: none;  
+}
+
+a:focus-visible {
+    outline: none;
 }
 
 body{
@@ -8,6 +16,22 @@ body{
     margin: 0px;
     align-content: center;
     overflow-x: hidden;
+}
+
+a:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    transition: 0.3s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(2px);
+    transition: 0.3s;
 }
 
 .navigation{
@@ -47,10 +71,10 @@ body{
 
 
 .text-menu{
-    font-size: 16px;
+    font-size: 17px;
     line-height: 150%;
     padding: 18px 30px;
-    color: #CCCCCC;
+    color:  #ECF2FE;
     cursor: pointer;
 }
 
@@ -71,7 +95,7 @@ body{
 .frame2{
     position: absolute;
     margin-top: -2px;
-    margin-left: 265px;
+    margin-left: 135px;
 }
 
 .metade1{
@@ -80,7 +104,7 @@ body{
     align-items: center;
     flex-wrap: wrap;
     width: 48.4%;
-    height: 32%;
+    height: 40%;
     margin-bottom: 60px!important;
 }
 
@@ -97,7 +121,7 @@ body{
 }
 
 .metade1 > .slick-dots{
-    bottom: -234px!important;
+    bottom: -220px!important;
     left: 295px!important;
 }
 
@@ -128,6 +152,7 @@ body{
     font-style: normal;
     font-weight: normal;
     margin-top: 10%;
+    font-size: 20px;
 }
 
 .section-frame2{
@@ -156,6 +181,17 @@ body{
     flex-wrap: nowrap;
 }
 
+.cards-b{
+    width: 400px;
+    height: 400px;
+    background: #00AEEF;;
+    margin: 21px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
 .cont1{
     width: 100%;
     height: 30%;
@@ -178,6 +214,16 @@ body{
     margin: 0px 0px 0px 35px;
 }
 
+.cont2-cab-b{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 43px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #FFFFFF;
+    margin: 0px 0px 0px 35px;
+}
+
 .cont3{
     width: 100%;
     height: 35%;
@@ -187,9 +233,18 @@ body{
 .cont3-text{
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 150%;
     color: #666666;
+    padding: 0px 35px 0px 35px;
+}
+
+.cont3-text-b{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    color: #FFFFFF;
     padding: 0px 35px 0px 35px;
 }
 
@@ -231,7 +286,7 @@ body{
     color: #FFFFFF;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 150%;
 }
 
@@ -240,6 +295,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 
 .frame4-h2{
@@ -284,7 +340,7 @@ body{
 .font-slide{
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 22px;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #CCCCCC;
@@ -293,7 +349,7 @@ body{
 .font-slide-text{
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 150%;
     text-align: center;
     color: #666666;
@@ -312,3 +368,96 @@ body{
     outline: none!important;
 }
 
+.section-frame5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.galeria1{
+    width: 99%;
+    margin: 0px 0px 10px 0px;
+}
+
+.galeria2{
+    width: 48%;
+    margin: 0px 0px 10px 10px;
+}
+
+.galeria3{
+    width: 48%;
+    margin: 0px 0px 10px 10px;
+}
+
+.galeria4{
+    width: 98%;
+    margin: 0px 0px 10px 10px;
+}
+
+
+.section-Rodapé{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 428px;
+    background: #2E3192;
+}
+
+.container-rodape {
+    display: flex;
+    max-width: 1140px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.rodape-logo{
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+.rodape-content{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -10%;
+    margin-bottom: 5%;
+}
+
+.text-rodape{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #FFFFFF;
+}
+
+.text-rodape-2{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #ECF2FE;
+}
+
+.rodape-content-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.ajuste-rodape{
+    margin-right: 13%;
+}
+
+.frame3{
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 490px;
+    width: 347px;
+}

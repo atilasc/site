@@ -25,10 +25,10 @@
                 <img src="{% static 'images/02.svg' %}" alt="">
             </div>
             <div class="navigation-menu">
-                <span class="text-menu">Sobre nós</span>
-                <a class="text-menu" href="#especialidade">Especialidades</a>
-                <span class="text-menu">Convênios</span>
-                <span class="text-menu">Contato</span>
+                <a class="text-menu btn">Sobre nós</a>
+                <a class="text-menu btn" href="#especialidade">Especialidades</a>
+                <a class="text-menu btn">Convênios</a>
+                <a class="text-menu btn" href="#contato">Contato</a>
             </div>
     
         </div>
@@ -60,15 +60,15 @@
     <section class="section-frame2">
         <div class="container">
             <div class="div-cards">
-                <div class="cards">
+                <div class="cards-b">
                     <div class="cont1">
-                        <img class="icone-card" src="{% static 'images/cards1.png' %}" alt="">
+                        <img class="icone-card" src="{% static 'images/cards1b.png' %}" alt="">
                     </div>
                     <div class="cont2">
-                        <h3 class="cont2-cab">Maternidade</h3>
+                        <h3 class="cont2-cab-b">Maternidade</h3>
                     </div>
                     <div class="cont3">
-                        <span class="cont3-text">Nossa maternidade incorpora os mais modernos conceitos em assistência obstétrica e neonatal, dispondo de recursos de ponta e assistência humanizada.</span>
+                        <span class="cont3-text-b">Nossa maternidade incorpora os mais modernos conceitos em assistência obstétrica e neonatal, dispondo de recursos de ponta e assistência humanizada.</span>
                     </div>
                     <div class="cont4">
                         <a href="#"></a>
@@ -122,7 +122,7 @@
 
     <section class="section-frame3">
         <h2 class="frame3-h2">Agende sua consulta!</h2>
-        <button class="frame3-button">Agendar consulta</button>
+        <button class="frame3-button btn">Agendar consulta</button>
     </section>
 
     <section id="especialidade" class="section-frame4">
@@ -164,31 +164,31 @@
                 <div>
                     <h3 class="font-slide-text">Obstetrícia é uma especialidade médica focada no acompanhamento de gestantes, desde o pré-natal até o pós-parto.</h3>
                 </div>
-                <div>
-                    <h3 class="font-slide-text">A Ortopedia é a área da medicina focada no diagnóstico e tratamento de problemas que afetam o aparelho locomotor e o sistema esquelético.</h3>
+                <div style="opacity: 0;">
+                    <h3 class="font-slide-text" >A Ortopedia é a área da medicina focada no diagnóstico e tratamento de problemas que afetam o aparelho locomotor e o sistema esquelético.</h3>
                 </div>
-                <div>
+                <div style="opacity: 0;">
                     <h3 class="font-slide-text">Bioimagem é uma área da medicina focada no diagnóstico por exames de imagem que auxiliam no tratamento precoce de diversas doenças.</h3>
                 </div>
-                <div>
+                <div style="opacity: 0;">
                     <h3 class="font-slide-text">Neonatologia é o ramo da medicina que visa tratar possíveis disfunções em crianças recém nascidas.</h3>
                 </div>
-                <div>
+                <div style="opacity: 0;">
                     <h3 class="font-slide-text">Ginecologia é uma especialidade médica que foca na prevenção e tratamento de doenças que acometem os órgãos genitais femininos.</h3>
                 </div>
-                <div>
+                <div style="opacity: 0;">
                     <h3 class="font-slide-text">A Urologia é uma área da medicina focada em tratamentos cirúrgicos e não cirúrgicos de doenças do intestino delgado, intestino grosso, reto e ânus.</h3>
                 </div>
-                <div>
+                <div style="opacity: 0;">
                     <h3 class="font-slide-text">A Angiologia é a área da medicina que se dedica a prevenir, diagnosticar e tratar todas as doenças relacionadas ao sistema circulatório.</h3>
                 </div>
-                <div>
+                <div style="opacity: 0;">
                     <h3 class="font-slide-text">A Cirurgia Oncológica é um dos procedimentos mais realizados para o tratamento de diversos tipos de câncer.</h3>
                 </div>
-                <div>
+                <div style="opacity: 0;">
                     <h3 class="font-slide-text">A Cirurgia Geral é uma área que ocupa-se do tratamento de enfermidades passíveis de serem solucionadas por procedimentos cirúrgicos.</h3>
                 </div>
-                <div>
+                <div style="opacity: 0;">
                     <h3 class="font-slide-text">A Cirurgia Pediátrica é a especialidade médica responsável pelo tratamento cirúrgico de doenças desenvolvidas entre o período neonatal e a puberdade.</h3>
                 </div>
             </div>
@@ -196,16 +196,66 @@
         
     </section>
 
-    <section class="section-frame4">
-
+    <section class="section-frame5">
+        <div class="container">
+            <div>
+                <img class="galeria1" src="{% static 'images/image1.jpg' %}" alt="">
+            </div>
+            <div>
+                <div>
+                    <img class="galeria2" src="{% static 'images/image2.jpg' %}" alt="">
+                    <img class="galeria3" src="{% static 'images/image3.jpg' %}" alt="">
+                </div>
+                <div>
+                    <img class="galeria4" src="{% static 'images/image4.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="section-convênios">
 
     </section>
 
-    <section class="section-Rodapé">
-        
+    <section id="contato" class="section-Rodapé">
+        <div class="container-rodape">
+            <div class="rodape-logo">
+                <img src="{% static 'images/02.svg' %}" alt="">
+            </div>
+            <div class="rodape-content">
+                <img class="frame3" src="{% static 'images/logo2.png' %}" alt="">
+                <div>
+                    <div>
+                        <span class="text-rodape">Quem somos</span>
+                    </div>
+                    <div class="rodape-content-2">
+                        <a class="text-rodape-2" href="#">História</a>
+                        <a class="text-rodape-2" href="#">Equipe</a>
+                        <a class="text-rodape-2" href="#">Galeria</a>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <span class="text-rodape">Serviços</span>
+                    </div>
+                    <div class="rodape-content-2">
+                        <a class="text-rodape-2" href="#">Pronto atendimento</a>
+                        <a class="text-rodape-2" href="#">Internações</a>
+                        <a class="text-rodape-2" href="#">Exames</a>
+                        <a class="text-rodape-2" href="#">Especialidades</a>
+                    </div>
+                </div>
+                <div class="ajuste-rodape">
+                    <div>
+                        <span class="text-rodape">Endereços</span>
+                    </div>
+                    <div>
+                        <span class="text-rodape-2">Feira de Santana – BA, na rua Domingos Barbosa de,<br/> Araújo, 1093 – Ponto Central ,<br/>Telefone (75) 2101-2600</span>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -248,7 +298,7 @@
                 fade: true,
                 cssEase: 'linear',
                 autoplay: true,
-                autoplaySpeed: 4000,
+                autoplaySpeed: 5000,
             });
         });
 
